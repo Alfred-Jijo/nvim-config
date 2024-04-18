@@ -1,2 +1,2 @@
--- vim.opt.background = "light"
+-- vim.opt.background = 'light'
 -- vim.cmd.colorscheme("randomhue")
