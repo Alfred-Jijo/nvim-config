@@ -87,7 +87,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 
 vim.keymap.set('n', '<leader>to', function ()
-    vim.cmd("sp") 
+    vim.cmd("sp")
     vim.cmd("term")
 end, { desc = " [O]pen [T]erminal" } )
 
@@ -123,7 +123,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 require("kickstart.plugins.lazy")
-
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4

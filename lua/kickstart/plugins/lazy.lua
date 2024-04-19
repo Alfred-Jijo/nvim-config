@@ -50,7 +50,7 @@ require('lazy').setup({
         "catppuccin/nvim",
         name = "catppuccin",
         init = function()
-            vim.cmd.colorscheme("catppuccin-frappe")
+            vim.cmd.colorscheme("catppuccin-latte")
         end,
         priority = 1000
     },
@@ -112,6 +112,7 @@ require('lazy').setup({
     require 'kickstart.plugins.telescope',
     require 'kickstart.plugins.lsp',
     require 'kickstart.plugins.autocompletion',
+    require 'kickstart.plugins.oil',
     -- require 'kickstart.plugins.lint',
 
 })
