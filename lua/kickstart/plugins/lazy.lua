@@ -49,9 +49,6 @@ require('lazy').setup({
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        init = function()
-            vim.cmd.colorscheme("catppuccin-latte")
-        end,
         priority = 1000
     },
     -- {

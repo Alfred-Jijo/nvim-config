@@ -123,6 +123,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 require("kickstart.plugins.lazy")
-
+require("config.options")
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4
