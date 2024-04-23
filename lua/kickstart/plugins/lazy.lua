@@ -103,6 +103,7 @@ require('lazy').setup({
     },
 
 
+    -- require 'kickstart.plugins.lint',
     -- require 'kickstart.plugins.debug',
     require 'kickstart.plugins.indent_line',
     require 'kickstart.plugins.treesitter',
@@ -110,6 +111,6 @@ require('lazy').setup({
     require 'kickstart.plugins.lsp',
     require 'kickstart.plugins.autocompletion',
     require 'kickstart.plugins.oil',
-    -- require 'kickstart.plugins.lint',
+    require 'kickstart.plugins.hardtime',
 
 })
