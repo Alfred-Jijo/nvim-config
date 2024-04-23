@@ -111,6 +111,6 @@ require('lazy').setup({
     require 'kickstart.plugins.lsp',
     require 'kickstart.plugins.autocompletion',
     require 'kickstart.plugins.oil',
-    require 'kickstart.plugins.hardtime',
+    -- require 'kickstart.plugins.hardtime',
 
 })

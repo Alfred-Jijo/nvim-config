@@ -1,4 +1,4 @@
-vim.opt.background = 'dark'
+vim.opt.background = 'light'
 
 require("catppuccin").setup({
 	flavour = "auto", -- latte, frappe, macchiato, mocha

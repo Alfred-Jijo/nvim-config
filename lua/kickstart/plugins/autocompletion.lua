@@ -4,6 +4,17 @@ return {
 		event = 'InsertEnter',
 		dependencies = {
 			-- Snippet Engine & its associated nvim-cmp source
+			opts = {
+				sources = {
+					-- other sources
+					{
+						name = "html-css",
+						option = {
+							-- your configuration here
+						},
+					},
+				},
+			},
 			{
 				'L3MON4D3/LuaSnip',
 				build = (function()
