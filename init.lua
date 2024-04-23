@@ -63,8 +63,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
-vim.opt.tabstop = 4
+vim.opt.tabstop = 8
 vim.opt.shiftwidth = 4
+vim.wo.wrap = false
+
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -124,5 +126,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 require("kickstart.plugins.lazy")
 require("config.options")
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=4 sts=4 sw=4
