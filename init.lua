@@ -64,8 +64,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 vim.opt.tabstop = 8
-vim.opt.shiftwidth = 4
-vim.wo.wrap = false
+vim.opt.shiftwidth = 8
+vim.opt.wrap = false
 
 
 -- [[ Basic Keymaps ]]
@@ -128,4 +128,4 @@ require("kickstart.plugins.lazy")
 require("config.options")
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=4 sts=4 sw=4
+-- vim: ts=8 sts=8 sw=8
