@@ -23,7 +23,7 @@ vim.opt.relativenumber = true
 vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
-vim.opt.showmode = false
+vim.opt.showmode = true
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -31,7 +31,7 @@ vim.opt.showmode = false
 vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
-vim.opt.breakindent = true
+vim.opt.breakindent = false
 
 -- Save undo history
 vim.opt.undofile = true
@@ -48,7 +48,7 @@ vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
-vim.opt.timeoutlen = 300
+vim.opt.timeoutlen = 900
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
@@ -89,9 +89,20 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- or just use <C-\><C-n> to exit terminal mode
 
 vim.keymap.set('n', '<leader>to', function ()
-    vim.cmd("sp")
-    vim.cmd("term")
-end, { desc = " [O]pen [T]erminal" } )
+    vim.cmd.vsplit()
+    vim.cmd.terminal()
+end, { desc = " [T]erminal [O]pen" } )
+
+vim.keymap.set('n', '<leader>wb', function ()
+        vim.cmd.w()
+        vim.cmd.make()
+end, { desc = " [W]rite and [B]uild File" })
+
+
+vim.keymap.set('n', '<leader>wr', function ()
+        vim.cmd.w()
+        vim.cmd.make("run")
+end, { desc = " [W]rite and [R]un File" })
 
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
