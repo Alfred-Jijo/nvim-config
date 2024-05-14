@@ -50,12 +50,13 @@ require('lazy').setup({
     {
         "catppuccin/nvim",
         name = "catppuccin",
-        priority = 1000
+        priority = 1000,
+        config = true,
     },
     {
         "ellisonleao/gruvbox.nvim",
-        priority = 1000 ,
-        config = true,
+        priority = 1000,
+        config = false,
     },
     -- {
     --     'folke/tokyonight.nvim',
