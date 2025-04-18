@@ -50,10 +50,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 vim.keymap.set('n', '<leader>bb', '<cmd>:buffer #<CR>', { desc = 'Go [B]ack to a previous [B]uffer' })
 
-vim.keymap.set('n', '<leader>to', function ()
+vim.keymap.set('n', '<leader>vto', function ()
+    vim.cmd.split()
+    vim.cmd.terminal()
+end, { desc = " [H]orizontal [T]erminal [O]pen" } )
+
+vim.keymap.set('n', '<leader>vto', function ()
     vim.cmd.vsplit()
     vim.cmd.terminal()
-end, { desc = " [T]erminal [O]pen" } )
+end, { desc = " [V]ertical [T]erminal [O]pen" } )
 
 vim.keymap.set('n', '<leader>wb', function ()
         vim.cmd.w()
